@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nhom9.Docker_Kubernet.Demo.AuthenticationService\Nhom9.Docker_Kubernet.Demo.AuthenticationService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\content\RSA256\" />
+  </ItemGroup>
+
+</Project>

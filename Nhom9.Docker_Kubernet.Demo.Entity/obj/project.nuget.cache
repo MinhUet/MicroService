@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "9mJeI//ZxztMaItLzT6Oz4HRJv2H4tciJC/d+72yRx2nNyd/mvgyqWEMrH+42IpZht8AkcCbhkDX6ic3a5d6XA==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\DataPrivate\\Nhom9.Docker_Kubernet.Demo\\Nhom9.Docker_Kubernet.Demo.Entity\\Nhom9.Docker_Kubernet.Demo.Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\mongodb.bson\\2.11.2\\mongodb.bson.2.11.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
