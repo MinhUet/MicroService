@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("523a9428-46c3-4b10-85fb-355c632a0d36")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nhom9.Docker_Kubernet.Demo.AuthenticationService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

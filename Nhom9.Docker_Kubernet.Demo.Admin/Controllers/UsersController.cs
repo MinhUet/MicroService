@@ -38,6 +38,13 @@ namespace Nhom9.Docker_Kubernet.Demo.UserService.Controllers
         }
 
 
+        [HttpGet]
+        [Route("healthz")]
+        public string Healthz()
+        {
+            return "User service active";
+        }
+
         [HttpPost("login")]
         [AllowAnonymous]
         public IActionResult Login([FromBody] UserDTO userLogin)

@@ -2,14 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>755c98fb-f983-4f56-b3cd-1c84e3aec929</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Nhom9.Docker_Kubernet.Demo.AuthenticationService\Nhom9.Docker_Kubernet.Demo.AuthenticationService.csproj" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\content\RSA256\" />
+    <ProjectReference Include="..\Nhom9.Docker_Kubernet.Demo.AuthenticationService\Nhom9.Docker_Kubernet.Demo.AuthenticationService.csproj" />
   </ItemGroup>
 
 </Project>

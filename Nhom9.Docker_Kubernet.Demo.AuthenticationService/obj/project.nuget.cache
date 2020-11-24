@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QmeZ2UaxS+ync+VjPY2OShSUUPsuaXxdU3mFocmsNGqOhJTxktsRnpADDm6hgR0B4PdcuB3fCFipFSJNWnfLsQ==",
+  "dgSpecHash": "hY8PiMrSwJz1D/WxeO6oeaYWFc2bj9ALz8yXz3FyRAbq/n1/VUlHQgT1MWFxeTaOgrE9xEO8efT4Gwoh4sJjEg==",
   "success": true,
   "projectFilePath": "D:\\C#\\DataPrivate\\Nhom9.Docker_Kubernet.Demo\\Nhom9.Docker_Kubernet.Demo.AuthenticationService\\Nhom9.Docker_Kubernet.Demo.AuthenticationService.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\nancy\\2.0.0\\nancy.2.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",

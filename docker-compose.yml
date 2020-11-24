@@ -1,0 +1,17 @@
+version: '3.0'
+services:
+  webui-service:
+    image: 13091999/web-ui-service:1.0.0
+    build:
+      context: .
+      dockerfile: Nhom9.Docker_Kubernet.Demo.WebUI/Dockerfile
+  user-service:
+    image: 13091999/user-service:1.0.0
+    build:
+      context: .
+      dockerfile: Nhom9.Docker_Kubernet.Demo.Admin/Dockerfile
+  auth-service:
+    image: 13091999/auth-service:1.0.0
+    build:
+      context: .
+      dockerfile: Nhom9.Docker_Kubernet.Demo.AuthenticationService/Dockerfile

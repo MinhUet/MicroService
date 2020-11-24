@@ -32,25 +32,27 @@ namespace Nhom9.Docker_Kubernet.Demo.AuthenticationService.MiddleWares
             headers.TryGetValue("Authorization", out bearerToken);
             try
             {
-                var accessToken = bearerToken.ToString().Split(' ').ToList()[1];
-                if(accessToken != null)
+                if(bearerToken.Count > 0)
                 {
-                    var decodedToken = _authenticationConfig.DecodeToken(accessToken);
-                    if (decodedToken != null)
+                    var accessToken = bearerToken.ToString().Split(' ').ToList()[1];
+                    if (accessToken != null)
                     {
-                        var json_serializer = new JavaScriptSerializer();
-                        var claims = (IDictionary<string, object>)json_serializer.DeserializeObject(decodedToken);
-                        var expiredTimeStamp = Convert.ToInt64(claims["exp"].ToString());
-                        var now = ((DateTimeOffset)DateTime.UtcNow).ToUnixTimeSeconds();
-                        context.Items.Add("x-full-name", claims["full-name"].ToString());
-                        context.Items.Add("x-userID", claims["userID"].ToString());
-                    } 
+                        var decodedToken = _authenticationConfig.DecodeToken(accessToken);
+                        if (decodedToken != null)
+                        {
+                            var json_serializer = new JavaScriptSerializer();
+                            var claims = (IDictionary<string, object>)json_serializer.DeserializeObject(decodedToken);
+                            var expiredTimeStamp = Convert.ToInt64(claims["exp"].ToString());
+                            var now = ((DateTimeOffset)DateTime.UtcNow).ToUnixTimeSeconds();
+                            context.Items.Add("x-full-name", claims["full-name"].ToString());
+                            context.Items.Add("x-userID", claims["userID"].ToString());
+                        }
+                    }
                 }
             }
             catch (SecurityTokenException ex)
             {
                 _logger.LogError("Localhost exception in AuthenMiddleWare: " + ex.ToString());
-                context.Items.Add("TenantId", "-1");
             }
             catch (Exception ex)
             {

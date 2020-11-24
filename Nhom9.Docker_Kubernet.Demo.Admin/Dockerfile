@@ -7,16 +7,20 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["Nhom9.Docker_Kubernet.Demo.Admin/Nhom9.Docker_Kubernet.Demo.Admin.csproj", "Nhom9.Docker_Kubernet.Demo.Admin/"]
-RUN dotnet restore "Nhom9.Docker_Kubernet.Demo.Admin/Nhom9.Docker_Kubernet.Demo.Admin.csproj"
+COPY ["Nhom9.Docker_Kubernet.Demo.Admin/Nhom9.Docker_Kubernet.Demo.UserService.csproj", "Nhom9.Docker_Kubernet.Demo.Admin/"]
+COPY ["Nhom9.Docker_Kubernet.Demo.Common/Nhom9.Docker_Kubernet.Demo.Common.csproj", "Nhom9.Docker_Kubernet.Demo.Common/"]
+COPY ["Nhom9.Docker_Kubernet.Demo.AuthenticationService/Nhom9.Docker_Kubernet.Demo.AuthenticationService.csproj", "Nhom9.Docker_Kubernet.Demo.AuthenticationService/"]
+COPY ["Nhom9.Docker_Kubernet.Demo.DL/Nhom9.Docker_Kubernet.Demo.DL.csproj", "Nhom9.Docker_Kubernet.Demo.DL/"]
+COPY ["Nhom9.Docker_Kubernet.Demo.Entity/Nhom9.Docker_Kubernet.Demo.Entity.csproj", "Nhom9.Docker_Kubernet.Demo.Entity/"]
+RUN dotnet restore "Nhom9.Docker_Kubernet.Demo.Admin/Nhom9.Docker_Kubernet.Demo.UserService.csproj"
 COPY . .
 WORKDIR "/src/Nhom9.Docker_Kubernet.Demo.Admin"
-RUN dotnet build "Nhom9.Docker_Kubernet.Demo.Admin.csproj" -c Release -o /app/build
+RUN dotnet build "Nhom9.Docker_Kubernet.Demo.UserService.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Nhom9.Docker_Kubernet.Demo.Admin.csproj" -c Release -o /app/publish
+RUN dotnet publish "Nhom9.Docker_Kubernet.Demo.UserService.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Nhom9.Docker_Kubernet.Demo.Admin.dll"]
+ENTRYPOINT ["dotnet", "Nhom9.Docker_Kubernet.Demo.UserService.dll"]

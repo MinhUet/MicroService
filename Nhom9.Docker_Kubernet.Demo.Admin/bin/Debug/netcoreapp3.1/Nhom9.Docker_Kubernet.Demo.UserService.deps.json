@@ -1542,6 +1542,7 @@
         "dependencies": {
           "BouncyCastle": "1.8.6.1",
           "Microsoft.IdentityModel.Tokens": "6.8.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
           "Nancy": "2.0.0",
           "jose-jwt": "2.6.1"
         },

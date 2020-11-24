@@ -22,9 +22,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{08FC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{FACD72CB-253A-40C2-BC33-E66328E4CD0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nhom9.Docker_Kubernet.Demo.WebUI", "Nhom9.Docker_Kubernet.Demo.WebUI\Nhom9.Docker_Kubernet.Demo.WebUI.csproj", "{F4302431-B490-43B0-8520-246D90CB9862}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nhom9.Docker_Kubernet.Demo.WebUI", "Nhom9.Docker_Kubernet.Demo.WebUI\Nhom9.Docker_Kubernet.Demo.WebUI.csproj", "{F4302431-B490-43B0-8520-246D90CB9862}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nhom9.Docker_Kubernet.Demo.AuthenticationService", "Nhom9.Docker_Kubernet.Demo.AuthenticationService\Nhom9.Docker_Kubernet.Demo.AuthenticationService.csproj", "{EC824820-D149-4C51-A852-8D293552CB32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nhom9.Docker_Kubernet.Demo.AuthenticationService", "Nhom9.Docker_Kubernet.Demo.AuthenticationService\Nhom9.Docker_Kubernet.Demo.AuthenticationService.csproj", "{EC824820-D149-4C51-A852-8D293552CB32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -27,7 +27,7 @@ namespace Nhom9.Docker_Kubernet.Demo.AuthenticationService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTransient<AuthenMiddleWare>();
+            //services.AddTransient<AuthenMiddleWare>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
